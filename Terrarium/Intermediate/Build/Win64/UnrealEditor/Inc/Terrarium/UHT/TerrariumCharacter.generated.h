@@ -17,10 +17,17 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ATerrariumCharacter ******************************************************
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execToggleCrouch); \
+	DECLARE_FUNCTION(execStopSprint); \
+	DECLARE_FUNCTION(execStartSprint); \
+	DECLARE_FUNCTION(execHandleInteract);
+
+
 struct Z_Construct_UClass_ATerrariumCharacter_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_ATerrariumCharacter_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrariumCharacter(); \
 	friend struct ::Z_Construct_UClass_ATerrariumCharacter_Statics; \
@@ -31,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrariumCharacter)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ATerrariumCharacter(ATerrariumCharacter&&) = delete; \
 	ATerrariumCharacter(const ATerrariumCharacter&) = delete; \
@@ -41,12 +48,13 @@ public: \
 	NO_API virtual ~ATerrariumCharacter();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_9_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_12_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_17_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_INCLASS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_20_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,5 +65,16 @@ class ATerrariumCharacter;
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h
+
+// ********** Begin Enum EMovementShakeState *******************************************************
+#define FOREACH_ENUM_EMOVEMENTSHAKESTATE(op) \
+	op(EMovementShakeState::Idle) \
+	op(EMovementShakeState::Walk) \
+	op(EMovementShakeState::Run) 
+
+enum class EMovementShakeState : uint8;
+template<> struct TIsUEnumClass<EMovementShakeState> { enum { Value = true }; };
+template<> TERRARIUM_NON_ATTRIBUTED_API UEnum* StaticEnum<EMovementShakeState>();
+// ********** End Enum EMovementShakeState *********************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

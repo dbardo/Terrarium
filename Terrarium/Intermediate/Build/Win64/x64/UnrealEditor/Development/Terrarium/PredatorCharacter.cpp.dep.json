@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\private\\ai\\predatorcharacter.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\terrariumeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\terrarium\\definitions.terrarium.h",
+            "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\public\\ai\\predatorcharacter.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\net\\core\\public\\net\\core\\nettoken\\nettokenexportcontext.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\net\\iris\\public\\iris\\serialization\\irisobjectreferencepackagemap.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\iriscore\\uht\\irisobjectreferencepackagemap.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\charactermovementreplication.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\rootmotionsource.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\predatorcharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

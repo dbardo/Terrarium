@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UInteractable_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_UInteractable_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UInteractable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -32,7 +32,7 @@ TERRARIUM_API UClass* Z_Construct_UClass_UInteractable_NoRegister();
 	virtual ~UInteractable() = default;
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_GENERATED_UINTERFACE_BODY() \
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUInteractable(); \
 	friend struct ::Z_Construct_UClass_UInteractable_Statics; \
@@ -43,15 +43,15 @@ public: \
 	DECLARE_SERIALIZER(UInteractable)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_GENERATED_UINTERFACE_BODY() \
-	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_GENERATED_UINTERFACE_BODY() \
+	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IInteractable() {} \
 public: \
@@ -60,11 +60,11 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_10_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_21_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_11_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Interaction_Interactable_h_14_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

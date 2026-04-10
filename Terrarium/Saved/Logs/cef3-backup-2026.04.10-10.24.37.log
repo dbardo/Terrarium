@@ -1,0 +1,19 @@
+[52352:57916:0410/061921.820:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[52352:57916:0410/061922.058:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[59584:49872:0410/061925.612:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-9D90CAB8B3E93C9BAA1C213FC6A848A5 will be ignored
+[53328:64888:0410/061929.068:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061929.072:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061929.097:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[53328:64888:0410/061929.102:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[53328:64888:0410/061929.118:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061929.126:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[52352:57916:0410/061929.286:ERROR:device_event_log_impl.cc(196)] [06:19:29.277] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[52352:69080:0410/061932.092:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[52352:69080:0410/061932.183:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[53328:64888:0410/061937.934:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061941.747:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061942.729:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061946.945:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061952.422:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[53328:64888:0410/061952.863:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[52352:57916:0410/062437.206:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

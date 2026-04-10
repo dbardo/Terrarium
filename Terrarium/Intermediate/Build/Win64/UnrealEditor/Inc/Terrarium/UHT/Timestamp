@@ -1,8 +1,11 @@
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\AI\PredatorCharacter.h
 E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Core\TerrariumGameInstance.h
 E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Core\TerrariumGameMode.h
 E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Core\TerrariumGameState.h
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Detection\NoiseEmitterComponent.h
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Detection\StealthComponent.h
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Interaction\Interactable.h
 E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Player\TerrariumCharacter.h
 E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Player\TerrariumPlayerController.h
-E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Detection\StealthComponent.h
-E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Detection\NoiseEmitterComponent.h
-E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\Interaction\Interactable.h
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\World\HideSpot.h
+E:\Terrarium\Terrarium\Terrarium\Source\Terrarium\Public\World\SignalItem.h

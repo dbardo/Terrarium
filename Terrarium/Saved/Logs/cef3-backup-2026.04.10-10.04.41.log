@@ -1,0 +1,15 @@
+[57448:62520:0410/055543.569:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[57448:62520:0410/055543.846:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[64176:66924:0410/055548.476:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-4080E1AFC1D06016C3856B0245079325 will be ignored
+[50280:32144:0410/055550.915:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[50280:32144:0410/055550.925:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[50280:32144:0410/055551.486:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[50280:32144:0410/055551.489:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[57448:62520:0410/055555.475:ERROR:device_event_log_impl.cc(196)] [05:55:55.146] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)
+[57448:58840:0410/055559.615:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[57448:58840:0410/055559.684:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[50280:32144:0410/055559.814:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[50280:32144:0410/055604.790:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[50280:32144:0410/055611.467:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[50280:32144:0410/055620.515:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[57448:62520:0410/060441.926:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
