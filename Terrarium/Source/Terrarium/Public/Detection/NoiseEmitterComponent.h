@@ -6,22 +6,22 @@
 #include "Runtime/AIModule/Classes/Perception/AIPerceptionStimuliSourceComponent.h"
 #include "NoiseEmitterComponent.generated.h"
 
-
+/**
+ * Component responsible for emitting noise stimuli to the AI perception system.
+ * Inherits from UAIPerceptionStimuliSourceComponent to act as a source for AI senses.
+ */
 UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
 class TERRARIUM_API UNoiseEmitterComponent : public UAIPerceptionStimuliSourceComponent
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this component's properties
+	/** Default constructor */
 	UNoiseEmitterComponent(const FObjectInitializer& ObjectInitializer);
 
-protected:
-	// Called when the game starts
-	virtual void BeginPlay() override;
-
-public:
-	// Called every frame
-	virtual void TickComponent(float DeltaTime, ELevelTick TickType,
-	                           FActorComponentTickFunction* ThisTickFunction) override;
+	/**
+	 * Emits a noise event at the component's owner location.
+	 * @param Radius The distance at which the noise can be heard by AI.
+	 */
+	void EmitNoise(float Radius);
 };

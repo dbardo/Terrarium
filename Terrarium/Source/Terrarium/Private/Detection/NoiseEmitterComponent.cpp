@@ -2,23 +2,26 @@
 
 
 #include "Detection/NoiseEmitterComponent.h"
+#include "Terrarium/Terrarium.h"
+#include "Perception/AISense_Hearing.h"
 
 UNoiseEmitterComponent::UNoiseEmitterComponent(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
-	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
+	PrimaryComponentTick.bCanEverTick = false;
 }
 
-void UNoiseEmitterComponent::BeginPlay()
+void UNoiseEmitterComponent::EmitNoise(float Radius)
 {
-	Super::BeginPlay();
+	if (Radius <= 0.f)
+	{
+		return;
+	}
+	
+	AActor* Owner = GetOwner();
+	if (Owner)
+	{
+		UE_LOG(LogTerrarium, Verbose, TEXT("%s emitting noise with radius: %f"), *Owner->GetName(), Radius);
+		UAISense_Hearing::ReportNoiseEvent(GetWorld(), Owner->GetActorLocation(), 1.0f, Owner, Radius);
+	}
 }
-
-void UNoiseEmitterComponent::TickComponent(float DeltaTime, ELevelTick TickType,
-                                           FActorComponentTickFunction* ThisTickFunction)
-{
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-}
-

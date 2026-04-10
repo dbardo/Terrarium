@@ -20,7 +20,10 @@
             "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aiperceptiontypes.generated.h",
             "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aisense.generated.h",
             "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aiperceptionstimulisourcecomponent.generated.h",
-            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\noiseemittercomponent.generated.h"
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\noiseemittercomponent.generated.h",
+            "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\terrarium.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\aimodule\\classes\\perception\\aisense_hearing.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\aimodule\\uht\\aisense_hearing.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

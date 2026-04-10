@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UStealthComponent_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_UStealthComponent_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_13_INCLASS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUStealthComponent(); \
 	friend struct ::Z_Construct_UClass_UStealthComponent_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UStealthComponent)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_13_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UStealthComponent(UStealthComponent&&) = delete; \
 	UStealthComponent(const UStealthComponent&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~UStealthComponent();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_10_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_13_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_25_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_13_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_13_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,5 +57,18 @@ class UStealthComponent;
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h
+
+// ********** Begin Enum EMovementState ************************************************************
+#define FOREACH_ENUM_EMOVEMENTSTATE(op) \
+	op(EMovementState::Crouching) \
+	op(EMovementState::Walking) \
+	op(EMovementState::Sprinting) \
+	op(EMovementState::Interacting) \
+	op(EMovementState::Hidden) 
+
+enum class EMovementState : uint8;
+template<> struct TIsUEnumClass<EMovementState> { enum { Value = true }; };
+template<> TERRARIUM_NON_ATTRIBUTED_API UEnum* StaticEnum<EMovementState>();
+// ********** End Enum EMovementState **************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

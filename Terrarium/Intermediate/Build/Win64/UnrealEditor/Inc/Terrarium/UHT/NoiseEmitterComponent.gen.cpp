@@ -54,10 +54,16 @@ struct Z_Construct_UClass_UNoiseEmitterComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * Component responsible for emitting noise stimuli to the AI perception system.\n * Inherits from UAIPerceptionStimuliSourceComponent to act as a source for AI senses.\n */" },
+#endif
 		{ "HideCategories", "Activation Collision" },
 		{ "IncludePath", "Detection/NoiseEmitterComponent.h" },
 		{ "ModuleRelativePath", "Public/Detection/NoiseEmitterComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Component responsible for emitting noise stimuli to the AI perception system.\nInherits from UAIPerceptionStimuliSourceComponent to act as a source for AI senses." },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -108,10 +114,10 @@ UNoiseEmitterComponent::~UNoiseEmitterComponent() {}
 struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNoiseEmitterComponent, UNoiseEmitterComponent::StaticClass, TEXT("UNoiseEmitterComponent"), &Z_Registration_Info_UClass_UNoiseEmitterComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNoiseEmitterComponent), 2353624167U) },
+		{ Z_Construct_UClass_UNoiseEmitterComponent, UNoiseEmitterComponent::StaticClass, TEXT("UNoiseEmitterComponent"), &Z_Registration_Info_UClass_UNoiseEmitterComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNoiseEmitterComponent), 2903375839U) },
 	};
 }; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_1665398272{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_386582912{
 	TEXT("/Script/Terrarium"),
 	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,

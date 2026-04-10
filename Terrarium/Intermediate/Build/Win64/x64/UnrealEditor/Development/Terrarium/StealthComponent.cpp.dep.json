@@ -7,7 +7,8 @@
         "Includes": [
             "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\terrarium\\definitions.terrarium.h",
             "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\public\\detection\\stealthcomponent.h",
-            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\stealthcomponent.generated.h"
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\stealthcomponent.generated.h",
+            "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\terrarium.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

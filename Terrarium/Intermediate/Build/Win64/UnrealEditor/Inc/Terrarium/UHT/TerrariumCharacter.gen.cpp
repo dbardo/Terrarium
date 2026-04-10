@@ -45,9 +45,15 @@ struct Z_Construct_UEnum_Terrarium_EMovementShakeState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * Represents the current movement state for camera shake selection.\n */" },
+#endif
 		{ "Idle.Name", "EMovementShakeState::Idle" },
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
 		{ "Run.Name", "EMovementShakeState::Run" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Represents the current movement state for camera shake selection." },
+#endif
 		{ "Walk.Name", "EMovementShakeState::Walk" },
 	};
 #endif // WITH_METADATA
@@ -85,8 +91,14 @@ struct Z_Construct_UFunction_ATerrariumCharacter_HandleInteract_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "Terrarium|Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Initiates interaction with objects in front of the player */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Initiates interaction with objects in front of the player" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -121,8 +133,14 @@ struct Z_Construct_UFunction_ATerrariumCharacter_StartSprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "Terrarium|Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Starts the sprinting movement */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Starts the sprinting movement" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -157,8 +175,14 @@ struct Z_Construct_UFunction_ATerrariumCharacter_StopSprint_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "Terrarium|Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Stops the sprinting movement and returns to walking */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Stops the sprinting movement and returns to walking" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -193,8 +217,14 @@ struct Z_Construct_UFunction_ATerrariumCharacter_ToggleCrouch_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
-		{ "Category", "Input" },
+		{ "Category", "Terrarium|Input" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Toggles between crouched and standing states */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Toggles between crouched and standing states" },
+#endif
 	};
 #endif // WITH_METADATA
 
@@ -258,81 +288,207 @@ struct Z_Construct_UClass_ATerrariumCharacter_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * Main player character class for Terrarium.\n * Handles movement, stealth, interaction, and camera effects.\n */" },
+#endif
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "Player/TerrariumCharacter.h" },
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Main player character class for Terrarium.\nHandles movement, stealth, interaction, and camera effects." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WalkSpeed_MetaData[] = {
-		{ "Category", "Movement" },
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Base walking speed */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Base walking speed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RunSpeed_MetaData[] = {
-		{ "Category", "Movement" },
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Speed when sprinting */" },
+#endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Speed when sprinting" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraRoot_MetaData[] = {
-		{ "Category", "Camera" },
-		{ "EditInline", "true" },
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FPCamera_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
+		{ "Category", "Terrarium|Camera" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Parent this between capsule and camera\n" },
+		{ "Comment", "/** Root component for the camera, used for height interpolation during crouching */" },
 #endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Parent this between capsule and camera" },
+		{ "ToolTip", "Root component for the camera, used for height interpolation during crouching" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FPCamera_MetaData[] = {
+		{ "Category", "Terrarium|Camera" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** First person camera component */" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "First person camera component" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StealthComp_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
+		{ "Category", "Terrarium|Stealth" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Component managing stealth and noise levels */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Component managing stealth and noise levels" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_NoiseEmitter_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
+		{ "Category", "Terrarium|Stealth" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Component for emitting noise events to AI */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Component for emitting noise events to AI" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IdleShake_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WalkShake_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RunShake_MetaData[] = {
-		{ "Category", "TerrariumCharacter" },
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraManager_MetaData[] = {
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CrouchCameraZ_MetaData[] = {
-		{ "Category", "Movement" },
-		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StandCameraZ_MetaData[] = {
-		{ "Category", "Movement" },
+		{ "Category", "Terrarium|Camera|Shakes" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Relative offset when crouched\n" },
+		{ "Comment", "/** Camera shake to play when idle */" },
 #endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Relative offset when crouched" },
+		{ "ToolTip", "Camera shake to play when idle" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WalkShake_MetaData[] = {
+		{ "Category", "Terrarium|Camera|Shakes" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Camera shake to play when walking */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Camera shake to play when walking" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RunShake_MetaData[] = {
+		{ "Category", "Terrarium|Camera|Shakes" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Camera shake to play when sprinting */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Camera shake to play when sprinting" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bIsSprinting_MetaData[] = {
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Whether the character is currently sprinting */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Whether the character is currently sprinting" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bSprintIsOnCooldown_MetaData[] = {
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Whether sprinting is currently on cooldown */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Whether sprinting is currently on cooldown" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintTimeRemaining_MetaData[] = {
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Current remaining sprint time */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Current remaining sprint time" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintCoolDown_MetaData[] = {
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Current cooldown remaining for sprinting */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Current cooldown remaining for sprinting" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SprintDuration_MetaData[] = {
+		{ "Category", "Terrarium|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Total duration a sprint can last */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Total duration a sprint can last" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractTime_MetaData[] = {
+		{ "Category", "Terrarium|Interaction" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Duration of the interaction noise penalty */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Duration of the interaction noise penalty" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraManager_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Reference to the player camera manager for playing shakes */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Reference to the player camera manager for playing shakes" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CrouchCameraZ_MetaData[] = {
+		{ "Category", "Terrarium|Camera|Crouch" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Target Z offset when crouched */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Target Z offset when crouched" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StandCameraZ_MetaData[] = {
+		{ "Category", "Terrarium|Camera|Crouch" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Target Z offset when standing */" },
+#endif
+		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Target Z offset when standing" },
 #endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CrouchInterpSpeed_MetaData[] = {
-		{ "Category", "Movement" },
+		{ "Category", "Terrarium|Camera|Crouch" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Relative offset when standing\n" },
+		{ "Comment", "/** Interpolation speed for camera height changes */" },
 #endif
 		{ "ModuleRelativePath", "Public/Player/TerrariumCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Relative offset when standing" },
+		{ "ToolTip", "Interpolation speed for camera height changes" },
 #endif
 	};
 #endif // WITH_METADATA
@@ -347,6 +503,14 @@ struct Z_Construct_UClass_ATerrariumCharacter_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_IdleShake;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_WalkShake;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_RunShake;
+	static void NewProp_bIsSprinting_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsSprinting;
+	static void NewProp_bSprintIsOnCooldown_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bSprintIsOnCooldown;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintTimeRemaining;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintCoolDown;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_SprintDuration;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_InteractTime;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CameraManager;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_CrouchCameraZ;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_StandCameraZ;
@@ -361,10 +525,10 @@ struct Z_Construct_UClass_ATerrariumCharacter_Statics
 	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_ATerrariumCharacter_HandleInteract, "HandleInteract" }, // 1682996669
-		{ &Z_Construct_UFunction_ATerrariumCharacter_StartSprint, "StartSprint" }, // 3234348075
-		{ &Z_Construct_UFunction_ATerrariumCharacter_StopSprint, "StopSprint" }, // 3632953982
-		{ &Z_Construct_UFunction_ATerrariumCharacter_ToggleCrouch, "ToggleCrouch" }, // 4126181477
+		{ &Z_Construct_UFunction_ATerrariumCharacter_HandleInteract, "HandleInteract" }, // 3589068520
+		{ &Z_Construct_UFunction_ATerrariumCharacter_StartSprint, "StartSprint" }, // 3361328043
+		{ &Z_Construct_UFunction_ATerrariumCharacter_StopSprint, "StopSprint" }, // 1627664568
+		{ &Z_Construct_UFunction_ATerrariumCharacter_ToggleCrouch, "ToggleCrouch" }, // 3028864106
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -383,6 +547,20 @@ const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATerrariumChar
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_IdleShake = { "IdleShake", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, IdleShake), Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_UCameraShakeBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IdleShake_MetaData), NewProp_IdleShake_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_WalkShake = { "WalkShake", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, WalkShake), Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_UCameraShakeBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WalkShake_MetaData), NewProp_WalkShake_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_RunShake = { "RunShake", nullptr, (EPropertyFlags)0x0024080000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, RunShake), Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_UCameraShakeBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RunShake_MetaData), NewProp_RunShake_MetaData) };
+void Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bIsSprinting_SetBit(void* Obj)
+{
+	((ATerrariumCharacter*)Obj)->bIsSprinting = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bIsSprinting = { "bIsSprinting", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ATerrariumCharacter), &Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bIsSprinting_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsSprinting_MetaData), NewProp_bIsSprinting_MetaData) };
+void Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bSprintIsOnCooldown_SetBit(void* Obj)
+{
+	((ATerrariumCharacter*)Obj)->bSprintIsOnCooldown = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bSprintIsOnCooldown = { "bSprintIsOnCooldown", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(ATerrariumCharacter), &Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bSprintIsOnCooldown_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bSprintIsOnCooldown_MetaData), NewProp_bSprintIsOnCooldown_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintTimeRemaining = { "SprintTimeRemaining", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, SprintTimeRemaining), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintTimeRemaining_MetaData), NewProp_SprintTimeRemaining_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintCoolDown = { "SprintCoolDown", nullptr, (EPropertyFlags)0x0020080000000014, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, SprintCoolDown), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintCoolDown_MetaData), NewProp_SprintCoolDown_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintDuration = { "SprintDuration", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, SprintDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SprintDuration_MetaData), NewProp_SprintDuration_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_InteractTime = { "InteractTime", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, InteractTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractTime_MetaData), NewProp_InteractTime_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_CameraManager = { "CameraManager", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, CameraManager), Z_Construct_UClass_APlayerCameraManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraManager_MetaData), NewProp_CameraManager_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_CrouchCameraZ = { "CrouchCameraZ", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, CrouchCameraZ), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CrouchCameraZ_MetaData), NewProp_CrouchCameraZ_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_StandCameraZ = { "StandCameraZ", nullptr, (EPropertyFlags)0x0040000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ATerrariumCharacter, StandCameraZ), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StandCameraZ_MetaData), NewProp_StandCameraZ_MetaData) };
@@ -397,6 +575,12 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATerrariu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_IdleShake,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_WalkShake,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_RunShake,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bIsSprinting,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_bSprintIsOnCooldown,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintTimeRemaining,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintCoolDown,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_SprintDuration,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_InteractTime,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_CameraManager,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_CrouchCameraZ,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATerrariumCharacter_Statics::NewProp_StandCameraZ,
@@ -445,13 +629,13 @@ ATerrariumCharacter::~ATerrariumCharacter() {}
 struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMovementShakeState_StaticEnum, TEXT("EMovementShakeState"), &Z_Registration_Info_UEnum_EMovementShakeState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 782483584U) },
+		{ EMovementShakeState_StaticEnum, TEXT("EMovementShakeState"), &Z_Registration_Info_UEnum_EMovementShakeState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3500991258U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ATerrariumCharacter, ATerrariumCharacter::StaticClass, TEXT("ATerrariumCharacter"), &Z_Registration_Info_UClass_ATerrariumCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATerrariumCharacter), 4052283925U) },
+		{ Z_Construct_UClass_ATerrariumCharacter, ATerrariumCharacter::StaticClass, TEXT("ATerrariumCharacter"), &Z_Registration_Info_UClass_ATerrariumCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATerrariumCharacter), 3924315203U) },
 	};
 }; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_2731848184{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_1448369{
 	TEXT("/Script/Terrarium"),
 	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,

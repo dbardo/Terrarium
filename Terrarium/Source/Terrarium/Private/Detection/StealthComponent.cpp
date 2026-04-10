@@ -2,35 +2,43 @@
 
 
 #include "Detection/StealthComponent.h"
+#include "Terrarium/Terrarium.h"
 
-
-// Sets default values for this component's properties
 UStealthComponent::UStealthComponent()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
-
-	// ...
+	PrimaryComponentTick.bCanEverTick = false;
+	CurrentState = EMovementState::Walking;
 }
 
-
-// Called when the game starts
 void UStealthComponent::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
-	
 }
 
-
-// Called every frame
-void UStealthComponent::TickComponent(float DeltaTime, ELevelTick TickType,
-                                      FActorComponentTickFunction* ThisTickFunction)
+float UStealthComponent::GetCurrentNoiseRadius() const
 {
-	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
-
-	// ...
+	switch (CurrentState)
+	{
+		case EMovementState::Crouching:
+			return HiddenNoiseRadius;
+		case EMovementState::Walking:
+			return WalkingNoiseRadius;
+		case EMovementState::Sprinting:
+			return SprintingNoiseRadius;
+		case EMovementState::Interacting:
+			return InteractingNoiseRadius;
+		case EMovementState::Hidden:
+			return HiddenNoiseRadius;
+		default:
+			return WalkingNoiseRadius;
+	}
 }
 
+void UStealthComponent::SetMovementState(EMovementState State)
+{
+	if (CurrentState != State)
+	{
+		CurrentState = State;
+		UE_LOG(LogTerrarium, Log, TEXT("%s state changed to %d"), *GetOwner()->GetName(), (uint8)State);
+	}
+}
