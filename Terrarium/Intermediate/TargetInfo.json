@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Terrarium",
+			"Path": "..\\Source\\Terrarium.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TerrariumEditor",
+			"Path": "..\\Source\\TerrariumEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

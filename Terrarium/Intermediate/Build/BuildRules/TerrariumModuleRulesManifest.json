@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\Terrarium\\Terrarium\\Terrarium\\Source\\Terrarium\\Terrarium.Build.cs",
+		"E:\\Terrarium\\Terrarium\\Terrarium\\Source\\Terrarium.Target.cs",
+		"E:\\Terrarium\\Terrarium\\Terrarium\\Source\\TerrariumEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.4"
+}

@@ -1,0 +1,23 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\private\\core\\terrariumgamestate.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\terrariumeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\terrarium\\definitions.terrarium.h",
+            "e:\\terrarium\\terrarium\\terrarium\\source\\terrarium\\public\\core\\terrariumgamestate.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestate.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamestatebase.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\programfiles\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestatebase.generated.h",
+            "d:\\programfiles\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamestate.generated.h",
+            "e:\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\terrariumgamestate.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

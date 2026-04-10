@@ -1,0 +1,44 @@
+{
+	"Targets": [
+		{
+			"Name": "LiveLinkHub",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\Programs\\LiveLinkHub\\Source\\LiveLinkHub.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "DotNetPerforceLib",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\Programs\\Shared\\EpicGames.Perforce.Native\\DotNetPerforceLib.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "IoStoreOnDemandTests",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\Runtime\\Experimental\\IoStore\\Tests\\IoStoreOnDemandTests.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "EventLoopUnitTests",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\Runtime\\Online\\Experimental\\EventLoopTests\\EventLoopUnitTests.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealEditor",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\UnrealEditor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "UnrealGame",
+			"Path": "D:\\ProgramFiles\\UE_5.7\\Engine\\Source\\UnrealGame.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Terrarium",
+			"Path": "..\\Source\\Terrarium.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TerrariumEditor",
+			"Path": "..\\Source\\TerrariumEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
