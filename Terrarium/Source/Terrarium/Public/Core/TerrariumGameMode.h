@@ -6,6 +6,12 @@
 #include "GameFramework/GameModeBase.h"
 #include "TerrariumGameMode.generated.h"
 
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGameWon);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGameLost);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnItemCollectedEvent, int32, NewCount);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPlayerStruckEvent, int32, NewCount);
+
 /**
  * 
  */
@@ -15,6 +21,11 @@ class TERRARIUM_API ATerrariumGameMode : public AGameModeBase
 	GENERATED_BODY()
 	
 public:
+	UPROPERTY(BlueprintAssignable) FOnGameWon OnGameWon;
+	UPROPERTY(BlueprintAssignable) FOnGameLost OnGameLost;
+	UPROPERTY(BlueprintAssignable) FOnItemCollectedEvent OnItemCollectedEvent;
+	UPROPERTY(BlueprintAssignable) FOnPlayerStruckEvent OnPlayerStruckEvent;
+	
 	void OnItemCollected();
 	void OnPlayerStruck();
 	int32 GetStrikeCount() const;
@@ -25,6 +36,9 @@ private:
 	int32 ItemCount = 0;
 	const int32 MaxStrikes = 3;
 	const int32 RequiredItems = 3;
+	bool bGameOver = false;
+	
+	void RespawnPlayer();
 	void CheckWinCondition();
 	void CheckLossCondition();
 	void TriggerWin();

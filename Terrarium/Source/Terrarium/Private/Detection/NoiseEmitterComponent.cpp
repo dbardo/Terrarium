@@ -15,11 +15,11 @@ void UNoiseEmitterComponent::EmitNoise(float Radius)
 {
 	if (Radius <= 0.f)
 	{
+		UE_LOG(LogTerrarium, Warning, TEXT("Noise radius must be positive!"));
 		return;
 	}
 	
-	AActor* Owner = GetOwner();
-	if (Owner)
+	if (AActor* Owner = GetOwner())
 	{
 		UE_LOG(LogTerrarium, Verbose, TEXT("%s emitting noise with radius: %f"), *Owner->GetName(), Radius);
 		UAISense_Hearing::ReportNoiseEvent(GetWorld(), Owner->GetActorLocation(), 1.0f, Owner, Radius);

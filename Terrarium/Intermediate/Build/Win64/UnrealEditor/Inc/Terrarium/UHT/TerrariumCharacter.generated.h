@@ -17,7 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class ATerrariumCharacter ******************************************************
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execToggleCrouch); \
 	DECLARE_FUNCTION(execStopSprint); \
 	DECLARE_FUNCTION(execStartSprint); \
@@ -27,7 +27,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_ATerrariumCharacter_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_ATerrariumCharacter_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_INCLASS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrariumCharacter(); \
 	friend struct ::Z_Construct_UClass_ATerrariumCharacter_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrariumCharacter)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ATerrariumCharacter(ATerrariumCharacter&&) = delete; \
 	ATerrariumCharacter(const ATerrariumCharacter&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~ATerrariumCharacter();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_24_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_25_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_27_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_INCLASS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

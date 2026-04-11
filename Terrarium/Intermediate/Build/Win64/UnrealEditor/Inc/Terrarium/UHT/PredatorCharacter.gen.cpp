@@ -12,11 +12,70 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 void EmptyLinkFunctionForGeneratedCodePredatorCharacter() {}
 
 // ********** Begin Cross Module References ********************************************************
+AIMODULE_API UClass* Z_Construct_UClass_UAIPerceptionComponent_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 TERRARIUM_API UClass* Z_Construct_UClass_APredatorCharacter();
 TERRARIUM_API UClass* Z_Construct_UClass_APredatorCharacter_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Terrarium();
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Class APredatorCharacter Function OnPerceptionUpdated **************************
+struct Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics
+{
+	struct PredatorCharacter_eventOnPerceptionUpdated_Parms
+	{
+		TArray<AActor*> UpdatedActors;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/AI/PredatorCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UpdatedActors_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function OnPerceptionUpdated constinit property declarations *******************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_UpdatedActors_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_UpdatedActors;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnPerceptionUpdated constinit property declarations *********************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function OnPerceptionUpdated Property Definitions ******************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::NewProp_UpdatedActors_Inner = { "UpdatedActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::NewProp_UpdatedActors = { "UpdatedActors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PredatorCharacter_eventOnPerceptionUpdated_Parms, UpdatedActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UpdatedActors_MetaData), NewProp_UpdatedActors_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::NewProp_UpdatedActors_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::NewProp_UpdatedActors,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PropPointers) < 2048);
+// ********** End Function OnPerceptionUpdated Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_APredatorCharacter, nullptr, "OnPerceptionUpdated", 	Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PredatorCharacter_eventOnPerceptionUpdated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00480401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::Function_MetaDataParams), Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::PredatorCharacter_eventOnPerceptionUpdated_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(APredatorCharacter::execOnPerceptionUpdated)
+{
+	P_GET_TARRAY_REF(AActor*,Z_Param_Out_UpdatedActors);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->OnPerceptionUpdated(Z_Param_Out_UpdatedActors);
+	P_NATIVE_END;
+}
+// ********** End Class APredatorCharacter Function OnPerceptionUpdated ****************************
 
 // ********** Begin Class APredatorCharacter *******************************************************
 FClassRegistrationInfo Z_Registration_Info_UClass_APredatorCharacter;
@@ -56,16 +115,38 @@ struct Z_Construct_UClass_APredatorCharacter_Statics
 		{ "IncludePath", "AI/PredatorCharacter.h" },
 		{ "ModuleRelativePath", "Public/AI/PredatorCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PerceptionComponent_MetaData[] = {
+		{ "Category", "PredatorCharacter" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/AI/PredatorCharacter.h" },
+	};
 #endif // WITH_METADATA
 
 // ********** Begin Class APredatorCharacter constinit property declarations ***********************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_PerceptionComponent;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 // ********** End Class APredatorCharacter constinit property declarations *************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OnPerceptionUpdated"), .Pointer = &APredatorCharacter::execOnPerceptionUpdated },
+	};
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_APredatorCharacter_OnPerceptionUpdated, "OnPerceptionUpdated" }, // 3049634063
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APredatorCharacter>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 }; // struct Z_Construct_UClass_APredatorCharacter_Statics
+
+// ********** Begin Class APredatorCharacter Property Definitions **********************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APredatorCharacter_Statics::NewProp_PerceptionComponent = { "PerceptionComponent", nullptr, (EPropertyFlags)0x01240800000a0009, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APredatorCharacter, PerceptionComponent), Z_Construct_UClass_UAIPerceptionComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PerceptionComponent_MetaData), NewProp_PerceptionComponent_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APredatorCharacter_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APredatorCharacter_Statics::NewProp_PerceptionComponent,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APredatorCharacter_Statics::PropPointers) < 2048);
+// ********** End Class APredatorCharacter Property Definitions ************************************
 UObject* (*const Z_Construct_UClass_APredatorCharacter_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_ACharacter,
 	(UObject* (*)())Z_Construct_UPackage__Script_Terrarium,
@@ -76,18 +157,20 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_APredatorCharacter_Stat
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
-	nullptr,
+	FuncInfo,
+	Z_Construct_UClass_APredatorCharacter_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_APredatorCharacter_Statics::PropPointers),
 	0,
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APredatorCharacter_Statics::Class_MetaDataParams), Z_Construct_UClass_APredatorCharacter_Statics::Class_MetaDataParams)
 };
 void APredatorCharacter::StaticRegisterNativesAPredatorCharacter()
 {
+	UClass* Class = APredatorCharacter::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_APredatorCharacter_Statics::Funcs));
 }
 UClass* Z_Construct_UClass_APredatorCharacter()
 {
@@ -105,10 +188,10 @@ APredatorCharacter::~APredatorCharacter() {}
 struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_APredatorCharacter, APredatorCharacter::StaticClass, TEXT("APredatorCharacter"), &Z_Registration_Info_UClass_APredatorCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APredatorCharacter), 3922147112U) },
+		{ Z_Construct_UClass_APredatorCharacter, APredatorCharacter::StaticClass, TEXT("APredatorCharacter"), &Z_Registration_Info_UClass_APredatorCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APredatorCharacter), 837070109U) },
 	};
 }; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_3347389854{
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_3989280172{
 	TEXT("/Script/Terrarium"),
 	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,

@@ -3,30 +3,46 @@
 
 #include "AI/PredatorCharacter.h"
 
+#include "Perception/AIPerceptionComponent.h"
+#include "Perception/AISenseConfig_Hearing.h"
+#include "Perception/AISenseConfig_Sight.h"
 
-// Sets default values
+
 APredatorCharacter::APredatorCharacter()
 {
-	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
+	
+	PerceptionComponent = CreateDefaultSubobject<UAIPerceptionComponent>(TEXT("PerceptionComponent"));
+	
+	UAISenseConfig_Hearing* HearingConfig = CreateDefaultSubobject<UAISenseConfig_Hearing>(TEXT("HearingConfig"));
+	HearingConfig->HearingRange = 600.f;
+	HearingConfig->LoSHearingRange = 1200.f;
+	HearingConfig->DetectionByAffiliation.bDetectEnemies = true;
+	
+	UAISenseConfig_Sight* SightConfig = CreateDefaultSubobject<UAISenseConfig_Sight>(TEXT("SenseConfig"));
+	SightConfig->SightRadius = 300.f;
+	SightConfig->PeripheralVisionAngleDegrees = 45.f;
+	SightConfig->DetectionByAffiliation.bDetectEnemies = true;
 }
 
-// Called when the game starts or when spawned
 void APredatorCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
-void APredatorCharacter::Tick(float DeltaTime)
+
+void APredatorCharacter::OnPlayerStruck()
 {
-	Super::Tick(DeltaTime);
+	// TODO: Alert GameMode
 }
 
-// Called to bind functionality to input
-void APredatorCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void APredatorCharacter::ResetToPatrolOrigin()
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	// TODO: Teleport back to origin
 }
 
+void APredatorCharacter::OnPerceptionUpdated(const TArray<AActor*>& UpdatedActors)
+{
+	
+}

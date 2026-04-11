@@ -20,7 +20,8 @@
 				"E:/Terrarium/Terrarium/Terrarium/Content/Data/IA_Sprint.uasset",
 				"E:/Terrarium/Terrarium/Terrarium/Content/Blueprints/Player/Effects/BP_WalkShake.uasset",
 				"E:/Terrarium/Terrarium/Terrarium/Content/Blueprints/Player/Effects/BP_IdleShake.uasset",
-				"E:/Terrarium/Terrarium/Terrarium/Content/Blueprints/Player/Effects/BP_SprintShake.uasset"
+				"E:/Terrarium/Terrarium/Terrarium/Content/Blueprints/Player/Effects/BP_SprintShake.uasset",
+				"E:/Terrarium/Terrarium/Terrarium/Content/AI/BB_Predator.uasset"
 			]
 		}
 	]

@@ -5,6 +5,7 @@
 			"HideSpot.gen.cpp.obj",
 			"Interactable.gen.cpp.obj",
 			"NoiseEmitterComponent.gen.cpp.obj",
+			"PredatorAIController.gen.cpp.obj",
 			"PredatorCharacter.gen.cpp.obj",
 			"SignalItem.gen.cpp.obj",
 			"StealthComponent.gen.cpp.obj",

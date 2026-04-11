@@ -16,11 +16,39 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+// ********** Begin Delegate FOnGameWon ************************************************************
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_10_DELEGATE \
+TERRARIUM_API void FOnGameWon_DelegateWrapper(const FMulticastScriptDelegate& OnGameWon);
+
+
+// ********** End Delegate FOnGameWon **************************************************************
+
+// ********** Begin Delegate FOnGameLost ***********************************************************
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_11_DELEGATE \
+TERRARIUM_API void FOnGameLost_DelegateWrapper(const FMulticastScriptDelegate& OnGameLost);
+
+
+// ********** End Delegate FOnGameLost *************************************************************
+
+// ********** Begin Delegate FOnItemCollectedEvent *************************************************
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_12_DELEGATE \
+TERRARIUM_API void FOnItemCollectedEvent_DelegateWrapper(const FMulticastScriptDelegate& OnItemCollectedEvent, int32 NewCount);
+
+
+// ********** End Delegate FOnItemCollectedEvent ***************************************************
+
+// ********** Begin Delegate FOnPlayerStruckEvent **************************************************
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_13_DELEGATE \
+TERRARIUM_API void FOnPlayerStruckEvent_DelegateWrapper(const FMulticastScriptDelegate& OnPlayerStruckEvent, int32 NewCount);
+
+
+// ********** End Delegate FOnPlayerStruckEvent ****************************************************
+
 // ********** Begin Class ATerrariumGameMode *******************************************************
 struct Z_Construct_UClass_ATerrariumGameMode_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_ATerrariumGameMode_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrariumGameMode(); \
 	friend struct ::Z_Construct_UClass_ATerrariumGameMode_Statics; \
@@ -31,7 +59,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrariumGameMode)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_21_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATerrariumGameMode(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +71,12 @@ public: \
 	NO_API virtual ~ATerrariumGameMode();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_12_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_15_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_18_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_21_INCLASS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

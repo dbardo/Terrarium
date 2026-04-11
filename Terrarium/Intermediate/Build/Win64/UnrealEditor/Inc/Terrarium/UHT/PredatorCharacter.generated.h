@@ -15,12 +15,17 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 
 // ********** Begin Class APredatorCharacter *******************************************************
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnPerceptionUpdated);
+
+
 struct Z_Construct_UClass_APredatorCharacter_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_APredatorCharacter_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPredatorCharacter(); \
 	friend struct ::Z_Construct_UClass_APredatorCharacter_Statics; \
@@ -31,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(APredatorCharacter)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	APredatorCharacter(APredatorCharacter&&) = delete; \
 	APredatorCharacter(const APredatorCharacter&) = delete; \
@@ -41,12 +46,13 @@ public: \
 	NO_API virtual ~APredatorCharacter();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_9_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_12_GENERATED_BODY \
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_11_PROLOG
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_12_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_12_ENHANCED_CONSTRUCTORS \
+	FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_INCLASS_NO_PURE_DECLS \
+	FID_Terrarium_Source_Terrarium_Public_AI_PredatorCharacter_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

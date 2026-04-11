@@ -6,23 +6,25 @@
 #include "GameFramework/Character.h"
 #include "PredatorCharacter.generated.h"
 
+class UAIPerceptionComponent;
+
 UCLASS()
 class TERRARIUM_API APredatorCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
 	APredatorCharacter();
+	
+	void OnPlayerStruck();  // Notifies GameMode, triggers reset
+	void ResetToPatrolOrigin();
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	UPROPERTY(VisibleAnywhere)
+	TObjectPtr<UAIPerceptionComponent> PerceptionComponent;
+	
+	UFUNCTION()
+	void OnPerceptionUpdated(const TArray<AActor*>& UpdatedActors);
 };

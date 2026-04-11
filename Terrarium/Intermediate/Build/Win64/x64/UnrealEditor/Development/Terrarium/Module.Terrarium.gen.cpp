@@ -2,6 +2,7 @@
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/HideSpot.gen.cpp"
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/Interactable.gen.cpp"
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/NoiseEmitterComponent.gen.cpp"
+#include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/PredatorAIController.gen.cpp"
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/PredatorCharacter.gen.cpp"
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/SignalItem.gen.cpp"
 #include "E:/Terrarium/Terrarium/Terrarium/Intermediate/Build/Win64/UnrealEditor/Inc/Terrarium/UHT/StealthComponent.gen.cpp"
