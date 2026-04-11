@@ -98,7 +98,6 @@ void ATerrariumCharacter::HandleInteract()
 				
 				// Apply noise penalty during interaction
 				StealthComp->SetMovementState(EMovementState::Interacting);
-				NoiseEmitter->EmitNoise(StealthComp->GetCurrentNoiseRadius());
 				
 				GetWorldTimerManager().SetTimer(InteractNoiseTimerHandle, this, &ATerrariumCharacter::OnInteractNoiseTimerExpired, InteractTime, false);
 			}

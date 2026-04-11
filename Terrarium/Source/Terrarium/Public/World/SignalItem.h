@@ -4,22 +4,23 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Interaction/Interactable.h"
 #include "SignalItem.generated.h"
 
 UCLASS()
-class TERRARIUM_API ASignalItem : public AActor
+class TERRARIUM_API ASignalItem : public AActor, public IInteractable
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this actor's properties
-	ASignalItem();
-
+	virtual void Interact(ATerrariumCharacter* Interactor) override;
+	
 protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere)
+	FName ItemID;
+	
+	UFUNCTION(BlueprintNativeEvent)
+	void OnCollected();	
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	bool bCollected = false;
 };

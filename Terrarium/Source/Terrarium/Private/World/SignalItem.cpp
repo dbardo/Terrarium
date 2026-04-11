@@ -3,24 +3,33 @@
 
 #include "World/SignalItem.h"
 
+#include "Core/TerrariumGameMode.h"
+#include "Detection/NoiseEmitterComponent.h"
+#include "Player/TerrariumCharacter.h"
 
-// Sets default values
-ASignalItem::ASignalItem()
-{
-	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
-}
 
-// Called when the game starts or when spawned
-void ASignalItem::BeginPlay()
+void ASignalItem::Interact(ATerrariumCharacter* Interactor)
 {
-	Super::BeginPlay();
+	if (bCollected) return;
 	
+	UE_LOG(LogTemp, Warning, TEXT("Signal item interacted with!"));
+	
+	bCollected = true;
+	
+	// Fire Interaction noise burst via Interactor's NoiseEmitter
+	Interactor->GetNoiseEmitter()->EmitNoise(700.f);
+	
+	// Notify GameMode
+	if (ATerrariumGameMode* GM = GetWorld()->GetAuthGameMode<ATerrariumGameMode>())
+	{
+		GM->OnItemCollected();
+		UE_LOG(LogTemp, Warning, TEXT("Item collected!"));
+	}
+	
+	OnCollected();
 }
 
-// Called every frame
-void ASignalItem::Tick(float DeltaTime)
+void ASignalItem::OnCollected_Implementation()
 {
-	Super::Tick(DeltaTime);
+	// Do nothing in CPP
 }
-

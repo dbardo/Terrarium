@@ -6,6 +6,7 @@
 #include "GameFramework/Character.h"
 #include "TerrariumCharacter.generated.h"
 
+class UNoiseEmitterComponent;
 /**
  * Represents the current movement state for camera shake selection.
  */
@@ -56,6 +57,8 @@ public:
 	/** Speed when sprinting */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Terrarium|Movement")
 	float RunSpeed = 600.f;
+	
+	UNoiseEmitterComponent* GetNoiseEmitter() const { return NoiseEmitter; }
 	
 protected:
 	/** Called when the game starts or when spawned */
