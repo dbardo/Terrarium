@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UStealthComponent_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_UStealthComponent_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUStealthComponent(); \
 	friend struct ::Z_Construct_UClass_UStealthComponent_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UStealthComponent)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UStealthComponent(UStealthComponent&&) = delete; \
 	UStealthComponent(const UStealthComponent&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~UStealthComponent();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_25_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_GENERATED_BODY \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_25_PROLOG
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,7 +56,7 @@ class UStealthComponent;
 // ********** End Class UStealthComponent **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h
+#define CURRENT_FILE_ID FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_StealthComponent_h
 
 // ********** Begin Enum EMovementState ************************************************************
 #define FOREACH_ENUM_EMOVEMENTSTATE(op) \

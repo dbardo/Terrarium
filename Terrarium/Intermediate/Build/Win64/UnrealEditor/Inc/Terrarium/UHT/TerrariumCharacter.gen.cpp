@@ -626,7 +626,7 @@ ATerrariumCharacter::~ATerrariumCharacter() {}
 // ********** End Class ATerrariumCharacter ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
 		{ EMovementShakeState_StaticEnum, TEXT("EMovementShakeState"), &Z_Registration_Info_UEnum_EMovementShakeState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3500991258U) },
@@ -634,12 +634,12 @@ struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_Terrar
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATerrariumCharacter, ATerrariumCharacter::StaticClass, TEXT("ATerrariumCharacter"), &Z_Registration_Info_UClass_ATerrariumCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATerrariumCharacter), 3924315203U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_1448369{
+}; // Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_1448369{
 	TEXT("/Script/Terrarium"),
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::EnumInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumCharacter_h__Script_Terrarium_Statics::EnumInfo),
 };
 // ********** End Registration *********************************************************************
 

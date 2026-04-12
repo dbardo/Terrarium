@@ -312,15 +312,15 @@ ATerrariumGameMode::~ATerrariumGameMode() {}
 // ********** End Class ATerrariumGameMode *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATerrariumGameMode, ATerrariumGameMode::StaticClass, TEXT("ATerrariumGameMode"), &Z_Registration_Info_UClass_ATerrariumGameMode, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATerrariumGameMode), 4007663591U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_3754767396{
+}; // Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_3754767396{
 	TEXT("/Script/Terrarium"),
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameMode_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

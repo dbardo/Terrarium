@@ -1,0 +1,28 @@
+[18776:35692:0412/113507.827:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[18776:35692:0412/113507.915:ERROR:os_crypt_win.cc(100)] Failed to decrypt: Key not valid for use in specified state. (0x8009000B)
+[18776:35692:0412/113508.056:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[18776:11224:0412/113511.029:WARNING:leveldb_database.cc(141)] Unable to open D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18776:11224:0412/113511.030:WARNING:leveldb_database.cc(141)] Unable to open D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18776:11224:0412/113511.031:WARNING:leveldb_database.cc(141)] Unable to open D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18776:11224:0412/113511.031:WARNING:leveldb_database.cc(141)] Unable to open D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata: IO error: D:\Projects\Terrarium\Terrarium\Terrarium\Saved\webcache_6613\Default\shared_proto_db\metadata/MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18776:11224:0412/113511.473:WARNING:value_store_frontend.cc(47)] Reading ahfgeienlihckogmohjhadlkjgocpleb.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[18776:11224:0412/113511.475:WARNING:value_store_frontend.cc(47)] Reading mhjfbmdgcfjbbpaeojofohoefgiehjai.alarms from  failed: IO error: .../MANIFEST-000001: Unable to create sequential file (ChromeMethodBFE: 7::NewSequentialFile::1)
+[16044:35684:0412/113511.818:ERROR:backend_impl.cc(989)] Critical error found -8
+[16044:35684:0412/113511.925:WARNING:storage_block-inl.h(138)] Failed data load.
+[28276:26264:0412/113511.987:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 5-9D98BFDB03025AA2E804AFD520F70505 will be ignored
+[16044:5452:0412/113514.798:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113514.806:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[16044:5452:0412/113515.467:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[16044:5452:0412/113515.501:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[18776:14880:0412/113517.445:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[18776:14880:0412/113517.555:ERROR:cast_crl.cc(443)] CRL - Verification failed.
+[16044:5452:0412/113525.755:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113529.603:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113535.995:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[16044:5452:0412/113540.742:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113915.088:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113915.140:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -107
+[16044:5452:0412/113929.688:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16044:5452:0412/113938.000:ERROR:ssl_client_socket_impl.cc(882)] handshake failed; returned -1, SSL error code 1, net_error -100
+[16916:10692:0412/115205.268:WARNING:frame_impl.cc(430)] virtual CefFrameImpl::SendProcessMessage sent to detached frame 7-5D66B177298D4D43B71C500D5F458949 will be ignored
+[18776:35692:0412/115335.059:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

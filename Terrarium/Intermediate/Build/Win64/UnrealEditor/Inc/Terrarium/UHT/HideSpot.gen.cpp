@@ -101,15 +101,15 @@ AHideSpot::~AHideSpot() {}
 // ********** End Class AHideSpot ******************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_AHideSpot, AHideSpot::StaticClass, TEXT("AHideSpot"), &Z_Registration_Info_UClass_AHideSpot, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHideSpot), 1112346188U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_759803426{
+}; // Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_759803426{
 	TEXT("/Script/Terrarium"),
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_World_HideSpot_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

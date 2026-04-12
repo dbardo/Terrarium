@@ -105,15 +105,15 @@ UTerrariumGameInstance::~UTerrariumGameInstance() {}
 // ********** End Class UTerrariumGameInstance *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UTerrariumGameInstance, UTerrariumGameInstance::StaticClass, TEXT("UTerrariumGameInstance"), &Z_Registration_Info_UClass_UTerrariumGameInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTerrariumGameInstance), 4229027929U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_3899083673{
+}; // Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_3899083673{
 	TEXT("/Script/Terrarium"),
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameInstance_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

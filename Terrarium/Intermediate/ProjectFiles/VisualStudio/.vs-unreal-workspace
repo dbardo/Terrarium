@@ -1,0 +1,19 @@
+{
+  "targets": {
+    "TerrariumEditor": {
+      "targetType": "Editor",
+      "targetPath": "D:\\Projects\\Terrarium\\Terrarium\\Terrarium\\Source\\TerrariumEditor.Target.cs",
+      "projectPath": "D:\\Projects\\Terrarium\\Terrarium\\Terrarium\\Terrarium.uproject",
+      "configurations": [
+        "Development"
+      ],
+      "platforms": [
+        "Win64"
+      ],
+      "architectures": [],
+      "configurationsAndPlatforms": [
+        "Development-Win64"
+      ]
+    }
+  }
+}

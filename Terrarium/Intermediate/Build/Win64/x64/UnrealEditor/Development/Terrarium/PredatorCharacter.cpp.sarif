@@ -10,13 +10,13 @@
                         "text": "'UAISenseConfig_Hearing::LoSHearingRange': LoSHearingRange is deprecated. Use HearingRange instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
                     },
                     "analysisTarget": {
-                        "uri": "file:///E:/Terrarium/Terrarium/Terrarium/Source/Terrarium/Private/AI/PredatorCharacter.cpp"
+                        "uri": "file:///D:/Projects/Terrarium/Terrarium/Terrarium/Source/Terrarium/Private/AI/PredatorCharacter.cpp"
                     },
                     "locations": [
                         {
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "file:///E:/Terrarium/Terrarium/Terrarium/Source/Terrarium/Private/AI/PredatorCharacter.cpp"
+                                    "uri": "file:///D:/Projects/Terrarium/Terrarium/Terrarium/Source/Terrarium/Private/AI/PredatorCharacter.cpp"
                                 },
                                 "region": {
                                     "startLine": 19,

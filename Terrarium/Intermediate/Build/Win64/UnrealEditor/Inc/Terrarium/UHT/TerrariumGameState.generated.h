@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_ATerrariumGameState_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_ATerrariumGameState_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrariumGameState(); \
 	friend struct ::Z_Construct_UClass_ATerrariumGameState_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrariumGameState)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATerrariumGameState(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~ATerrariumGameState();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_12_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_GENERATED_BODY \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_12_PROLOG
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +58,6 @@ class ATerrariumGameState;
 // ********** End Class ATerrariumGameState ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h
+#define CURRENT_FILE_ID FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Core_TerrariumGameState_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

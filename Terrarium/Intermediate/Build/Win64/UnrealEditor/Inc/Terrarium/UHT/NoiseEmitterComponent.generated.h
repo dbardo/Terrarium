@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_UNoiseEmitterComponent_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_UNoiseEmitterComponent_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUNoiseEmitterComponent(); \
 	friend struct ::Z_Construct_UClass_UNoiseEmitterComponent_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(UNoiseEmitterComponent)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UNoiseEmitterComponent(UNoiseEmitterComponent&&) = delete; \
 	UNoiseEmitterComponent(const UNoiseEmitterComponent&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~UNoiseEmitterComponent();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_13_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_GENERATED_BODY \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_13_PROLOG
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +56,6 @@ class UNoiseEmitterComponent;
 // ********** End Class UNoiseEmitterComponent *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h
+#define CURRENT_FILE_ID FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Detection_NoiseEmitterComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

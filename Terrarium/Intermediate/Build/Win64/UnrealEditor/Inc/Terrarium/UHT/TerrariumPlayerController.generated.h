@@ -20,7 +20,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct Z_Construct_UClass_ATerrariumPlayerController_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_ATerrariumPlayerController_NoRegister();
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATerrariumPlayerController(); \
 	friend struct ::Z_Construct_UClass_ATerrariumPlayerController_Statics; \
@@ -31,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(ATerrariumPlayerController)
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATerrariumPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -43,12 +43,12 @@ public: \
 	NO_API virtual ~ATerrariumPlayerController();
 
 
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_12_PROLOG
-#define FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_GENERATED_BODY \
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_12_PROLOG
+#define FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -58,6 +58,6 @@ class ATerrariumPlayerController;
 // ********** End Class ATerrariumPlayerController *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h
+#define CURRENT_FILE_ID FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

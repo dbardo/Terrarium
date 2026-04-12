@@ -106,15 +106,15 @@ ATerrariumPlayerController::~ATerrariumPlayerController() {}
 // ********** End Class ATerrariumPlayerController *************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics
+struct Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_ATerrariumPlayerController, ATerrariumPlayerController::StaticClass, TEXT("ATerrariumPlayerController"), &Z_Registration_Info_UClass_ATerrariumPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ATerrariumPlayerController), 1153566410U) },
 	};
-}; // Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_3170401028{
+}; // Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_3170401028{
 	TEXT("/Script/Terrarium"),
-	Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Terrarium_Terrarium_Terrarium_Source_Terrarium_Public_Player_TerrariumPlayerController_h__Script_Terrarium_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };
