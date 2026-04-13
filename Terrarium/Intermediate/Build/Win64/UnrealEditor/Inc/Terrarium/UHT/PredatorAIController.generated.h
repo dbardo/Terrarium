@@ -15,8 +15,13 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UBlackboardComponent;
 
 // ********** Begin Class APredatorAIController ****************************************************
+#define FID_Terrarium_Source_Terrarium_Public_AI_PredatorAIController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetBB);
+
+
 struct Z_Construct_UClass_APredatorAIController_Statics;
 TERRARIUM_API UClass* Z_Construct_UClass_APredatorAIController_NoRegister();
 
@@ -45,6 +50,7 @@ public: \
 #define FID_Terrarium_Source_Terrarium_Public_AI_PredatorAIController_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Terrarium_Source_Terrarium_Public_AI_PredatorAIController_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Terrarium_Source_Terrarium_Public_AI_PredatorAIController_h_12_INCLASS_NO_PURE_DECLS \
 	FID_Terrarium_Source_Terrarium_Public_AI_PredatorAIController_h_12_ENHANCED_CONSTRUCTORS \
 private: \

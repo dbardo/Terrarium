@@ -19,10 +19,10 @@
                                     "uri": "file:///E:/Terrarium/Terrarium/Terrarium/Source/Terrarium/Private/AI/PredatorCharacter.cpp"
                                 },
                                 "region": {
-                                    "startLine": 19,
+                                    "startLine": 22,
                                     "startColumn": 15,
                                     "snippet": {
-                                        "text": "\tHearingConfig->LoSHearingRange = 1200.f;"
+                                        "text": "\tHearingConfig->LoSHearingRange = 1400.f;"
                                     }
                                 }
                             }
