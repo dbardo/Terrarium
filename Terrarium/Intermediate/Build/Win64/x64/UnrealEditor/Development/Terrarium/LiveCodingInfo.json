@@ -1,0 +1,20 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.Terrarium.gen.cpp.obj": [
+			"HideSpot.gen.cpp.obj",
+			"Interactable.gen.cpp.obj",
+			"NoiseEmitterComponent.gen.cpp.obj",
+			"PredatorAIController.gen.cpp.obj",
+			"PredatorCharacter.gen.cpp.obj",
+			"SignalItem.gen.cpp.obj",
+			"StealthComponent.gen.cpp.obj",
+			"Terrarium.init.gen.cpp.obj",
+			"TerrariumCharacter.gen.cpp.obj",
+			"TerrariumGameInstance.gen.cpp.obj",
+			"TerrariumGameMode.gen.cpp.obj",
+			"TerrariumGameState.gen.cpp.obj",
+			"TerrariumPlayerController.gen.cpp.obj"
+		]
+	}
+}

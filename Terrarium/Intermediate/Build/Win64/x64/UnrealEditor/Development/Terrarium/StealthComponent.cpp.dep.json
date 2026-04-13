@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\projects\\terrarium\\terrarium\\terrarium\\source\\terrarium\\private\\detection\\stealthcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\projects\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\terrariumeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\projects\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\terrarium\\definitions.terrarium.h",
+            "d:\\projects\\terrarium\\terrarium\\terrarium\\source\\terrarium\\public\\detection\\stealthcomponent.h",
+            "d:\\projects\\terrarium\\terrarium\\terrarium\\intermediate\\build\\win64\\unrealeditor\\inc\\terrarium\\uht\\stealthcomponent.generated.h",
+            "d:\\projects\\terrarium\\terrarium\\terrarium\\source\\terrarium\\terrarium.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
