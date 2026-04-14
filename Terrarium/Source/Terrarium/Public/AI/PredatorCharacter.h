@@ -26,6 +26,7 @@ public:
 	FOnPredatorStrikesPlayer OnPredatorStrikesPlayer;
 	
 	// Called by BTTask_StrikeIfInRange
+	UFUNCTION(BlueprintCallable, Category = "Predator AI")
 	void OnPlayerStruck(); 
 	
 	// Called by BTTask_ResetToPatrol
@@ -35,7 +36,7 @@ public:
 	void SetSightSenseEnabled(bool bEnabled);
 	
 	// Patrol waypoints - populated in editor on BP_Predator
-	UPROPERTY(EditInstanceOnly)
+	UPROPERTY(EditInstanceOnly, BlueprintReadOnly)
 	TArray<TObjectPtr<AActor>> PatrolPoints;
 	
 	FVector PatrolOrigin; // Set in BeginPlay from the initial actor location
