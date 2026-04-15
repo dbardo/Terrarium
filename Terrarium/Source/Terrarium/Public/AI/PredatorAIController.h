@@ -14,6 +14,7 @@ class TERRARIUM_API APredatorAIController : public AAIController
 public:
 	APredatorAIController();
 	
+	UFUNCTION(BlueprintPure, Category = "Predator AI")
 	UBlackboardComponent* GetBB()  { return GetBlackboardComponent(); }
 	
 protected:
