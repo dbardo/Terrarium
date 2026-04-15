@@ -33,6 +33,7 @@ public:
 	void ResetToPatrolOrigin();
 	
 	// Called by BTService_ListenForStimulus
+	UFUNCTION(BlueprintCallable, Category = "Predator AI")
 	void SetSightSenseEnabled(bool bEnabled);
 	
 	// Patrol waypoints - populated in editor on BP_Predator
